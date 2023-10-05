@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "me.ts.chromaworldborder.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinWorldRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
