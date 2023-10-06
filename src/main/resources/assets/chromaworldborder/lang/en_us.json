@@ -1,0 +1,7 @@
+{
+  "config.chromaworldborder.title": "Chroma World Border",
+  "config.chromaworldborder.category.main": "Main",
+  "config.chromaworldborder.options.speed": "Chroma Speed",
+  "config.chromaworldborder.options.speed.tooltip": "Changes the speed of the RGB cycle of the world border.",
+  "config.chromaworldborder.options.enabled": "Enabled"
+}

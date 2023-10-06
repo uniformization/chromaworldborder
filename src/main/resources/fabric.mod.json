@@ -1,34 +1,35 @@
 {
-	"schemaVersion": 1,
-	"id": "chromaworldborder",
-	"version": "${version}",
-	"name": "ChromaWorldBorder",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"ts"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "MIT",
-	"icon": "assets/chromaworldborder/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-          "me.ts.chromaworldborder.ChromaWorldBorder"
-		]
-	},
-	"mixins": [
-		"chromaworldborder.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.14.22",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "chromaworldborder",
+  "version": "${version}",
+  "name": "ChromaWorldBorder",
+  "description": "Makes your world border RGB.",
+  "authors": [
+    "ts"
+  ],
+  "contact": {
+    "homepage": "https://github.com/uniformization/chromaworldborder",
+    "sources": "https://github.com/uniformization/chromaworldborder",
+    "issues": "https://github.com/uniformization/chromaworldborder/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/chromaworldborder/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.ts.chromaworldborder.ChromaWorldBorder"
+    ],
+    "modmenu": [
+      "me.ts.chromaworldborder.config.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    "chromaworldborder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
 }

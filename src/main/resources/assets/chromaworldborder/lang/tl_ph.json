@@ -1,0 +1,7 @@
+{
+  "config.chromaworldborder.title": "Chroma World Border",
+  "config.chromaworldborder.category.main": "Pangunahin",
+  "config.chromaworldborder.options.speed": "Bilis ng Chroma",
+  "config.chromaworldborder.options.speed.tooltip": "Binabago ang bilis ng RGB cycle ng world border.",
+  "config.chromaworldborder.options.enabled": "Pinagana"
+}
