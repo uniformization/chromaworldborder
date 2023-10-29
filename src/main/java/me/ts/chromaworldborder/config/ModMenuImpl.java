@@ -9,6 +9,8 @@ import me.ts.chromaworldborder.ChromaWorldBorder;
 import net.minecraft.text.Text;
 
 public class ModMenuImpl implements ModMenuApi {
+    private final Options defaultOptions = new Options();
+
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
         return parent -> {
@@ -20,12 +22,12 @@ public class ModMenuImpl implements ModMenuApi {
             Options options = ChromaWorldBorder.configuration.getOptions();
 
             mainCategory.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config.chromaworldborder.options.enabled"), options.enabled)
-                .setDefaultValue(true)
+                .setDefaultValue(defaultOptions.enabled)
                 .setSaveConsumer(newValue -> options.enabled = newValue)
                 .build());
 
             mainCategory.addEntry(entryBuilder.startDoubleField(Text.translatable("config.chromaworldborder.options.speed"), options.speed)
-                .setDefaultValue(0.5)
+                .setDefaultValue(defaultOptions.speed)
                 .setMin(0.1)
                 .setMax(10.0)
                 .setTooltip(Text.translatable("config.chromaworldborder.options.speed.tooltip"))

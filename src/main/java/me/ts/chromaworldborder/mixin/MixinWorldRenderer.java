@@ -45,7 +45,6 @@ public class MixinWorldRenderer {
             float hue = (float) ((this.ticks * this.options.speed) % 360);
             return Color.getHSBColor(hue / 360, 1.0f, 1.0f).getRGB();
         }
-        WorldBorder worldBorder = this.world.getWorldBorder();
-        return worldBorder.getStage().getColor();
+        return this.world.getWorldBorder().getStage().getColor();
     }
 }
