@@ -1,0 +1,7 @@
+{
+  "config.chromaworldborder.title": "彩虹边界",
+  "config.chromaworldborder.category.main": "主界面",
+  "config.chromaworldborder.options.speed": "变化速度",
+  "config.chromaworldborder.options.speed.tooltip": "改变边界 RGB 循环的速度。",
+  "config.chromaworldborder.options.enabled": "启用"
+}
