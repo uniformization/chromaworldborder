@@ -3,7 +3,8 @@
   "package": "me.ts.chromaworldborder.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinWorldRenderer"
+    "IMixinWorldRenderer" ,
+    "MixinWorldBorderRendering"
   ],
   "injectors": {
     "defaultRequire": 1
