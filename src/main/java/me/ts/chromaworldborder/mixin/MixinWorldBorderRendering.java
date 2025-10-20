@@ -27,7 +27,7 @@ public class MixinWorldBorderRendering {
     }
 
     @Redirect(
-        method = "render",
+        method = "updateRenderState",
         at = @At(
             value = "INVOKE",
             target = "Lnet/minecraft/world/border/WorldBorderStage;getColor()I"
